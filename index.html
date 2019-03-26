@@ -9,13 +9,75 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
+    <body onscroll="scrolledFromTop()">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <script src="" async defer></script>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">VIDEO</a>
+            <a href="#">MUSIC</a>
+            <a href="#">TOUR DATES</a>
+            <a href="#">MERCH</a>
+          </div>
+          
+        <div class="top-bar">
+            <div class="burger" onclick="openNav()">
+                <img src="imgs/burgerIcon.png">
+            </div>
+            <div class="socials">
+                <img src="imgs/spotify.png">
+                <img src="imgs/itunes.png">
+                <img src="imgs/youtube.png">
+            </div>
+        </div>
+        <div class="parallax">
+            <div class="center">MJ DUKE</div>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/watch?v=WILNIXZr2oc" frameborder="0"></iframe>
+        </div>
+        <table id="tour-dates">
+            <tr class="grey">
+                <td>10 APR</td>
+                <td>LONDON</td>
+                <td>THE JAZZ CAFE</td>
+                <td>TICKETS</td>
+            </tr>
+            <tr>
+                <td>17 APR</td>
+                <td>MANCHESTER</td>
+                <td>02 ACADEMY</td>
+                <td>TICKETS</td>
+            </tr>
+            <tr class="grey">
+                <td>22 APR</td>
+                <td>AMSTERDAM</td>
+                <td>MELKWEG</td>
+                <td>TICKETS</td>
+            </tr>
+            <tr>
+                <td>10 APR</td>
+                <td>LONDON</td>
+                <td>THE JAZZ CAFE</td>
+                <td>TICKETS</td>
+            </tr">
+            <tr class="grey">
+                <td>17 APR</td>
+                <td>MANCHESTER</td>
+                <td>02 ACADEMY</td>
+                <td>TICKETS</td>
+            </tr>
+            <tr>
+                <td>22 APR</td>
+                <td>AMSTERDAM</td>
+                <td>MELKWEG</td>
+                <td>TICKETS</td>
+            </tr>
+        </table>
+        <script src="main.js" async defer></script>
     </body>
 </html>
